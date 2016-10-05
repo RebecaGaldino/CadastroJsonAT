@@ -39,8 +39,8 @@ public class CadastrarActivity extends Activity {
         return this.pessoa;
     }
 
-    public void setPessoa(Pessoa p){
-        this.pessoa = p;
+    public void setPessoa(Pessoa pessoa){
+        this.pessoa = pessoa;
     }
 
     public void limparCampo(){
