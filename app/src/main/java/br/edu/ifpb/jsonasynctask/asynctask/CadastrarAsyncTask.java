@@ -24,7 +24,7 @@ public class CadastrarAsyncTask extends AsyncTask<Pessoa,Void,String>{
 
     @Override
     protected String doInBackground(Pessoa... pessoas) {
-       String msg = "";
+       String resp = "";
 
         try {
 
@@ -43,9 +43,9 @@ public class CadastrarAsyncTask extends AsyncTask<Pessoa,Void,String>{
             data.close();
 
             if(urlConnection.getResponseCode() == 200){
-                msg= "Ok";
+                resp= "Ok";
             }else{
-                msg = "Erro! algo de errado não está certo";
+                resp = "Erro! algo de errado não está certo";
             }
 
             urlConnection.disconnect();
@@ -53,7 +53,7 @@ public class CadastrarAsyncTask extends AsyncTask<Pessoa,Void,String>{
         } catch (IOException e) {
             Log.e("Erro: ", e.getMessage());
         } finally {
-            return msg;
+            return resp;
         }
     }
 
