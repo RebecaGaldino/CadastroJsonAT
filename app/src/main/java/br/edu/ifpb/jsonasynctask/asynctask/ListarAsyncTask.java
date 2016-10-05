@@ -77,7 +77,7 @@ public class ListarAsyncTask extends AsyncTask< String, Void, List<Pessoa> > {
             } else if (obj.equals("endereco")) {
                 endereco = reader.nextString();
 
-            } else if (obj.equals("user")) {
+            } else if (obj.equals("cpf")) {
                 cpf = reader.nextString();
 
             } else {
