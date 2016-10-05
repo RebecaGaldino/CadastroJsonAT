@@ -43,9 +43,9 @@ public class CadastrarAsyncTask extends AsyncTask<Pessoa,Void,String>{
             data.close();
 
             if(urlConnection.getResponseCode() == 200){
-                resp= "Ok";
+                resp= "O usuário foi cadastrado com sucesso!";
             }else{
-                resp = "Erro! algo de errado não está certo";
+                resp = "Erro! Houve alguma falha de sistema.";
             }
 
             urlConnection.disconnect();
